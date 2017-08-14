@@ -1,0 +1,99 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 12rem;
+  min-height: 100%;
+  color: #000;
+  background-color: #ECF3FA;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+::selection {
+  background: #057AFF;
+  color: #fff;
+}
+::-moz-selection {
+  background: #057AFF;
+  color: #fff;
+}
+
+a {
+  cursor: pointer;
+  color: #333399;
+}
+
+a:hover {
+  color: inherit;
+  color: #333399;
+  opacity: .75;
+}
+
+.navbar {
+  padding-bottom: 0;
+}
+
+.navbar-default {
+  visibility: visible;
+  background-color: #fff !important;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-text, .navbar-default .navbar-brand:hover .navbar-brand:focus {
+  color: #0077CF;
+  font-weight: 500;
+
+}
+
+.navbar-default .navbar-nav .nav-link {
+  color: rgb(17, 17, 17);
+  border-bottom: 3.5px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.navbar-default .nav-link,
+.navbar-default .nav-item:hover .nav-link {
+  font-size: 12pt;
+  color: rgb(17, 17, 17);
+  border-bottom: 3.5px solid rgb(130, 130, 130);
+  transition: all 0.2s ease;
+}
+
+.navbar-default .nav-item .active {
+  color: #2176F3 !important;
+  border-bottom: 3.5px solid #2176F3 !important;
+}
+
+.navbar-nav > li{
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.navbar-default .dropdown-menu {
+  background-color: #FFF;
+}
+.navbar-default .dropdown-item {
+  color: #000;
+}
+.navbar-default .dropdown-item:hover,
+.navbar-default .dropdown-item:focus {
+  color: #333333;
+  background-color: rgba(255,255,255,.5);
+}
+
+.brand-logo {
+  width: 75px;
+  padding-right: .5rem;
+}
