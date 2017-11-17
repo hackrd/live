@@ -21,6 +21,21 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Web Push -->
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>
+    <script>
+      var OneSignal = window.OneSignal || [];
+      OneSignal.push(["init", {
+        appId: "872473b5-b157-4eeb-a212-75e3c263da8b",
+        autoRegister: true,
+
+        notifyButton: {
+            enable: true
+        }
+      }]);
+
+    </script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-toggleable-sm fixed-top navbar-gradient navbar-inverse navbar-fix" id="mobile-nav">
@@ -41,13 +56,13 @@
               <a class="nav-link" href="updates.html">Updates</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="map.html">Map</a>
+              <a class="nav-link" href="map.html">Map</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="activities.html">Activities</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="links.html">Links</a>
+              <a class="nav-link active" href="links.html">Links</a>
             </li>
           </ul>
         </div>
@@ -66,74 +81,64 @@
           <a class="nav-link" href="updates.html">Updates</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="map.html">Map</a>
+          <a class="nav-link" href="map.html">Map</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="activities.html">Activities</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="links.html">Links</a>
+          <a class="nav-link active" href="links.html">Links</a>
         </li>
       </ul>
     </div>
 
     <div class="mobile-pagehead">
-      <h1 class="mobile-head">Map</h1>
+      <h1 class="mobile-head">Links</h1>
     </div>
 
 
 
     <div class="container">
-      <div class="row">
+      <h2>Important Links</h2>
+        <p>Sites you need to know</p>
+        <br>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="img/link-imgs/devpost.png" class="link-icons">
+                    <h4><a class="link-title" href="http://hackriverdell2017.devpost.com">Devpost <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></h4>
+                    <p>This is where you submit your hack. Submissions open at 6:00 AM.</p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="img/link-imgs/aws.png" class="link-icons">
+                    <h4><a class="link-title" href="http://bit.ly/awslhd3">Amazon Web Services <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></h4>
+                    <p>Build a server or host a hack here.  Claim $100 worth of AWS Credit. (not required to use for hacks)</p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="img/link-imgs/domain.png" class="link-icons">
+                    <h4><a class="link-title" href="http://domain.com/mlh">Domain.com <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></h4>
+                    <p>
+                      Get a FREE DOMAIN for one year. Pick any domain available using .com, .org, or .net.
+                    </p>
+                </div>
+            </div>
+        <hr>
+      <h2>Helpful Links</h2>
+        <p>Tools and sites to use to make your hack stand out</p>
+        <br>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="img/link-imgs/marvelapp.png" class="link-icons">
+                    <h4><a class="link-title" href="http://marvelapp.com">Marvel App  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></h4>
+                    <p>Great for app prototyping. No coding required.</p>
+                </div>
 
-          <div class="col-md-8">
-            <img src="img/map.png" width="100%">
-          </div>
-          <div class="col-md-4">
-          <h3>Locations</h3>
-            <table class="table borderless">
-              <tbody>
-                <tr>
-                    <td><i class="fa fa-circle map-lobby" aria-hidden="true"></i></td>
-                    <td>Lobby (Check-in)</td>
-                </tr>
-                <tr>
-                    <td><i class="fa fa-circle map-auditorium" aria-hidden="true"></i></td>
-                    <td>Auditorium</td>
-                </tr>
-                <tr>
-                    <td><i class="fa fa-circle map-library" aria-hidden="true"></i></td>
-                    <td>Library (Hacking Space)</td>
-                </tr>
-                <tr>
-                    <td><i class="fa fa-circle map-workshop" aria-hidden="true"></i></td>
-                    <td>Workshops (Room 105A)</td>
-                </tr>
-                <tr>
-                    <td><i class="fa fa-circle map-cafeteria" aria-hidden="true"></i></td>
-                    <td>Cafeteria (Hacking Space)</td>
-                </tr>
-                <tr>
-                    <td><i class="fa fa-circle map-serving" aria-hidden="true"></i></td>
-                    <td>Food Service</td>
-                </tr>
-                <tr>
-                    <td><i class="fa fa-circle map-commons" aria-hidden="true"></i></td>
-                    <td>Eating Area (Commons)</td>
-                </tr>
-                <tr>
-                    <td><i class="fa fa-circle map-sleeping" aria-hidden="true"></i></td>
-                    <td>Sleeping Area (Lower Gym)</td>
-                </tr>
-                <tr>
-                    <td><i class="fa fa-circle map-restrooms" aria-hidden="true"></i></td>
-                    <td>Restrooms</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-      </div>
+                <div class="col-sm-4">
+                    <img src="img/link-imgs/mlh.png" class="link-icons">
+                    <h4><a class="link-title" href="http://hardware.mlh.io">MLH Hardware Lab  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></h4>
+                    <p>Borrow awesome hardware to make your hack to the next level!</p>
+                </div>
 
+            </div>
 
     </div>
 

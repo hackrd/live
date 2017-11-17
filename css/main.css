@@ -89,6 +89,31 @@ a:hover {
   text-align: center;
 }
 
+.mobile-pagehead {
+  color: #000;
+  background: #ECF3FA;
+  height: 10rem;
+  z-index: -99999999999;
+  text-align: left;
+  display: none;
+  padding-top: 5.5rem;
+  padding-left: 1.5rem;
+}
+
+.mobile-head {
+  font-size: 24pt;
+  display: inline;
+}
+
+.desktop-head {
+  display: inline;
+  padding-bottom: 2.5rem;
+}
+
+.link-icons {
+  max-width: 200px;
+  margin-bottom: 1rem;
+}
 
 
 #site-logo {
@@ -514,6 +539,18 @@ a:hover {
           padding-top: 1rem;
         }
 
+        .mobile-pagehead {
+          display: block;
+        }
+
+        .desktop-head {
+          display: none;
+        }
+
+        #content {
+          padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+        }
+
 
       }
 
@@ -594,12 +631,24 @@ a:hover {
             padding-bottom: 12rem;
           }
 
+          .mobile-pagehead {
+            display: block;
+          }
+
+          .desktop-head {
+            display: none;
+          }
+
           .footer {
             height: 12rem;
           }
 
           .social-icons {
             padding-top: 1rem;
+          }
+
+          #content {
+            padding: 1.5rem 1.5rem 1.5rem 1.5rem;
           }
 
           .icon {
