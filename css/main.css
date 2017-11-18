@@ -115,6 +115,16 @@ a:hover {
   margin-bottom: 1rem;
 }
 
+.countdown {
+  background-color: #ECEFF1;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 0.5rem;
+  width: 450px;
+  text-align: center;
+  font-size: 30pt;
+  font-weight: 700;
+}
 
 #site-logo {
   padding-top: 1rem;
@@ -551,6 +561,15 @@ a:hover {
           padding: 1.5rem 1.5rem 1.5rem 1.5rem;
         }
 
+        .countdown {
+          font-size: 24pt;
+          width: 100%
+        }
+
+        .landing {
+          margin-top: 5rem;
+        }
+
 
       }
 
@@ -627,6 +646,19 @@ a:hover {
         and (-webkit-device-pixel-ratio: 3)
         and (orientation: portrait) {
 
+
+          #mobile-nav {
+            display: block;
+          }
+
+          #nav {
+            display: none;
+          }
+
+          .site-header {
+            display: none;
+          }
+
           body {
             padding-bottom: 12rem;
           }
@@ -637,6 +669,15 @@ a:hover {
 
           .desktop-head {
             display: none;
+          }
+
+          .countdown {
+            font-size: 24pt;
+            width: 100%
+          }
+
+          .landing {
+            margin-top: 5rem;
           }
 
           .footer {
@@ -1012,6 +1053,15 @@ a:hover {
           #confirm-subtitle {
             font-size: 14pt;
             padding-bottom: 3rem;
+          }
+
+          .countdown {
+            font-size: 24pt;
+            width: 100%
+          }
+
+          .landing {
+            margin-top: 5rem;
           }
       }
 
